@@ -530,3 +530,24 @@ footer {
  .post__info .author {
   margin-bottom: 0;
  }
+
+ /**
+  * About
+  */
+
+.about__author {
+  margin-left: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 40px;
+  box-shadow: 0 3px 13px -1px rgba(0, 0, 0, 0.15);
+}
+
+.about__author .about__author__name {
+  margin-bottom: 5px;
+  color: #000;
+}

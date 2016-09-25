@@ -40,7 +40,7 @@ There are some great projects, maintained by one person or a team of people, who
 
 Now don't get me wrong, I'm not picking on anyone here, I understand. I, of all people, have some not so great repos that are Open Source, but I want to try and change that. And I want you to help me do it.
 
-What we can do to make the situation better is this: we can create a specification, a checklist, of all the good practices that an Open Source project should have. Like, it should have documentation. Documentation should consist of the following things. It should have tests. You can read the proposed standard in the link below.
+What we can do to make the situation better is this: we can create a specification, a checklist, of all the good practices that an Open Source project should have. Like, it should have documentation. Documentation should consist of the following things. It should have tests. You can read the proposed standard in our [Review Guidelines](https://github.com/jspolice/review-guidelines) on GitHub.
 
 Let me know what you think about it and we can work together to improve it.
 
@@ -58,6 +58,7 @@ If not, no problem. We're all got busy lives.
 We should all understand that behind all of these projects are real people, who devote large amounts of time and energy into creating something others may find useful. They do it in their spare time, because they are passionate about software development and being Open Source. 
 
 Here are some of our goals:
+
 - Learning good code patterns through code review
 - Discovering the architecture and the code style
 - Curate a list of awesome JavaScript libraries
@@ -67,5 +68,3 @@ Here are some of our goals:
 So let's dive right in, shall we?
 
 Take care.
-
-JS Police - You have the right to remain open source

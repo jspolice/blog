@@ -4,20 +4,30 @@ title = "About"
 hidden = true
 +++
 
-### Hey so you want to know what's the deal with this HipsterCodes thing?
+# About JSPolice
 
-Ok, listen up, it's pretty simple.
+JSPolice is a blog where we review Open Source JavaScript libraries and post the results.
 
-We put hipster poster quotes here but with a programming twist.
+- Learning good code patterns through review
+- Discovering architecture and code styles
+- Currate a list of awesome small libs
+- Document the API, the build process and the contribution process
+- Lower the barrier to enter and start contributing to an Open Source project
 
-We hope that you will like our sense of humor and share and like and cuddle our posts.
+## Who's behind it?
 
-Well, that's it. I told you it's simple.
+<div class="about__author">
+  <a href="http://petar.io">
+    <img class="about__author__image" src="/images/authors/petar.png" alt="">
+    <div class="about__author__name">
+      Petar Slovic
+    </div>
+    <small>
+      #jswarrior
+    </small>
+  </a>
+</div>
 
-***
+## Other info
 
-<a href="http://petarslovic.com"><img class="petar-w-glasses" src="/images/petar-w-glasses.png" alt=""></a>
-### Who's behind this?
-
-Hi, my name is Petar Slovic.  
-Wanna check me out? I'm [right here](http://petarslovic.com)
+<a href="/icons">Icon Contributions</a>

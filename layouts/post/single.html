@@ -11,6 +11,36 @@
     <div class="post-single__image" style="background-image: url('/images/posts/{{ with .Params.image }}{{ . }}{{ else }}default.png{{ end }}')"></div>
 
     {{ .Content }}
+
+    <aside>
+      <section>
+        <div class="p-share">
+          <h4>Share this article</h4>
+          <a class="p-share__facebook" href="http://www.facebook.com/sharer.php?src=bm&u={{ .Permalink }}&t={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+          <a class="p-share__twitter" href="http://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+          <a class="p-share__gplus" href="https://plus.google.com/share?url={{ .Permalink }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+          <a class="p-share__pocket" href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+        </div>
+      </section>
+
+      {{ with .Site.Params.disqusShortname }}
+      <section>
+        <div>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              var disqus_shortname = '{{ . }}';
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+      </section>
+      {{ end }}
+    </aside>
   </div>
 
 </div>

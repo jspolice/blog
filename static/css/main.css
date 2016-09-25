@@ -551,3 +551,38 @@ footer {
   margin-bottom: 5px;
   color: #000;
 }
+
+/**
+ * Share
+ */
+
+ .p-share {
+   text-align: center;
+ }
+
+ .p-share a {
+   display: inline-block;
+   width: 3rem;
+   height: 3rem;
+   line-height: 3rem;
+   background-color: #263238;
+   border-radius: 100%;
+   color: #eceff1;
+   margin: 0 0.5rem;
+ }
+
+ .p-share .p-share__facebook {
+  background-color: #3b5998;
+ }
+
+ .p-share .p-share__twitter {
+  background-color: #00aced;
+ }
+
+ .p-share .p-share__gplus {
+  background-color: #dd4b39;
+ }
+
+ .p-share .p-share__pocket {
+  background-color: #ef4056;
+ }

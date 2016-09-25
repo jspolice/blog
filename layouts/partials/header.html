@@ -7,12 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="{{ .Site.Params.name }}">
-    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ if eq .URL "/" }}
+    <title>{{ .Title }}</title>
+    <meta property='og:title' content="{{ .Title }}">
+    <meta property="og:type" content="website">
+    {{ else }}
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <meta property='og:title' content="{{ .Title }} - {{ .Site.Title }}">
+    <meta property="og:type" content="article">
+    {{ end }}
+
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Params.image }}<meta property="og:image" content="{{ $.Site.BaseURL }}images/{{ . }}">{{ end }}
   
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/social-icons.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">

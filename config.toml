@@ -1,8 +1,8 @@
 baseurl = "http://jspolice.com/"
 languageCode = "en-us"
 title = "JSPolice"
-googleAnalytics = ""
-disqusShortname = "petario"
+googleAnalytics = "UA-80126273-1"
+disqusShortname = "jspolice"
 copyright = "Copyright *Petar Slovic*"
 
 [params]
@@ -11,6 +11,7 @@ copyright = "Copyright *Petar Slovic*"
   title = "Review & Contributions"
   tagline = "Let's improve JS Open Source Projects."
   enableRSS = true
+  comment = true
 
 [social]
   twitter  = "https://twitter.com/JSPoliceReviews"

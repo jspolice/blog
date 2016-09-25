@@ -526,3 +526,7 @@ footer {
   font-weight: 400;
   margin-left: 5px;
  }
+
+ .post__info .author {
+  margin-bottom: 0;
+ }

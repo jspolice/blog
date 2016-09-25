@@ -1,7 +1,7 @@
 +++
 date = "2016-09-23T10:05:59+02:00"
 title = "Team Leader's Guide To Managing Large Projects"
-description = "If you ask any experienced engineer how to build a really big and complex app, they'll tell you - don't. They'll tell you to start small and expand as needed."
+description = "If you ask any experienced engineer how to build a really big and complex app, they'll tell you - don't..."
 image = ""
 type = "post"
 

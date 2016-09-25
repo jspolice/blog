@@ -1,0 +1,11 @@
+<h2 class="post-list__title">Latest Reviews</h2>
+<ul class="review-list review-list--latest">
+  {{ range first 10 (where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "eq" "review") }}
+    <li>
+      <a href="{{ .Site.BaseURL }}review/{{ urlize .Title }}" class="review">
+        <img src="{{ .Site.BaseURL }}images/reviews/{{ .Params.image }}" alt="{{ .Title }}" class="review__image">
+        <div class="review__info">{{ .Title }}</div>
+      </a>
+    </li>
+ {{ end }}
+</ul>

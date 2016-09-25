@@ -1,0 +1,23 @@
+<header class="profile">
+  <a href="/"><img class="profile__image" src="{{ .Site.BaseURL }}images/logo.png" alt="Petar Slovic"></a>
+  <div class="profile__author">
+    <a href="/" class="profile__name">{{ .Site.Params.name }}</a>
+    <em class="profile__title">{{ .Site.Params.title }}</em>
+    <div class="profile__tagline">{{ .Site.Params.tagline }}</div>
+  </div>
+
+  <a href="#" class="profile__button">
+    Contribute!
+  </a>
+
+  {{ partial "social.html" . }}
+
+  <nav class="nav nav--main">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/" class="nav__link {{ if .IsHome }}nav__link--active{{ end }}">HOME</a></li>
+      <li class="nav__item"><a href="/reviews" class="nav__link" data-nav="/reviews/">REVIEWS</a></li>
+      <li class="nav__item"><a href="/blog" class="nav__link" data-nav="/blog/">BLOG</a></li>
+      <li class="nav__item"><a href="/about" class="nav__link" data-nav="/about/">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>

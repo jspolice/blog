@@ -1,0 +1,11 @@
+{{ template "partials/header.html" . }}
+
+<div class="wrapper">
+  {{ partial "header-profile.html" . }}
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+</div>
+{{ template "partials/footer.html" . }}

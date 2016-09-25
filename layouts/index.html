@@ -1,0 +1,24 @@
+{{ template "partials/header.html" . }}
+
+<div class="wrapper">
+  {{ partial "header-profile.html" . }}
+
+  <div class="content">
+    <header class="content__header">
+      <h1 class="content__title">JS Police</h1>
+      <p class="content__description">JS Police is a blog where we review Open Source JavaScript libraries. We then contribute trying to fix issues that we came across. The main goal is to learn about code quality through reviews, and to lower the barrier for contributing to Open Source projects by talking about them.</p>
+    </header>
+
+    <div class="content__reviews">
+      {{ partial "review-list.html" . }}
+    </div>
+    
+    <div class="content__latest-posts">
+      {{ partial "latest-posts.html" . }}
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+{{ template "partials/footer.html" . }}

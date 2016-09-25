@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="{{ .Site.Params.name }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+  
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/social-icons.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+
+    {{ if .Site.Params.enableRSS }}
+      <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="line line--top"></div>

@@ -1,0 +1,14 @@
+{{ template "partials/header.html" . }}
+
+<div class="wrapper">
+  {{ partial "header-profile.html" . }}
+
+  <div class="content review-single">
+    <h1>{{ .Title }}</h1>
+    {{ partial "author.html" .Params.author }}
+    <div class="review-single__image" style="background-image: url('/images/reviews/{{ .Params.imagebig }}')"></div>
+    {{ .Content }}
+  </div>
+
+</div>
+{{ template "partials/footer.html" . }}

@@ -1,0 +1,9 @@
+<h2 class="post-list__title">Latest Posts</h2>
+<ul class="post-list post-list--latest">
+  {{ range first 10 (where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "eq" "post") }}
+  {{ $url := replace .Permalink .Site.BaseURL "" }}
+    <li>
+      {{ partial "post-small.html" . }}
+    </li>
+ {{ end }}
+</ul>

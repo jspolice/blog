@@ -1,0 +1,24 @@
+    <footer id="footer">
+      {{ if .Site.Social }}
+        {{ partial "social-full.html" . }}
+      {{ end }}
+      <p class="small">
+      {{ with .Site.Params.copyright }}
+        {{ . | markdownify }}
+      {{ else }}
+        © Copyright {{.Now.Format "2006"}} {{ .Site.Params.name }}
+      {{ end }}
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.slim.min.js"></script>
+
+    <script src="{{ .Site.BaseURL }}js/main.js"></script>
+
+    {{ template "_internal/google_analytics.html" . }}
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>

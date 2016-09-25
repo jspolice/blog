@@ -1,0 +1,20 @@
+baseurl = "http://jspolice.com"
+languageCode = "en-us"
+title = "JSPolice"
+googleAnalytics = ""
+disqusShortname = "petario"
+copyright = "Copyright *Petar Slovic*"
+
+[params]
+  name = "JSPolice"
+  description = "JS Police desc?"
+  title = "Review & Contributions"
+  tagline = "Let's improve JS Open Source Projects."
+  enableRSS = true
+
+[social]
+  twitter  = "https://twitter.com/JSPoliceReviews"
+  email  = "petar@jspolice.com"
+  github = "https://www.github.com/jspolice"
+  youtube = "https://www.youtube.com/channel/UCPd7dPOKxlj6qMBiAsbvMKQ"
+  mail = "petar@petarslovic.com"

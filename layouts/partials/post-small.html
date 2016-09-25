@@ -1,0 +1,17 @@
+<div class="post">
+  <a href="{{ .Permalink }}"><img class="post__image" src="{{ .Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.png{{ end }}" alt=""></a>
+  <span class="post__info">
+    <a href="{{ .Permalink }}" class="post__title">{{ .Title }}</a>
+    <aside class="post__date">{{ .Date.Format "Jan 2" }}</aside>
+    <aside class="post__tags">
+      {{ with .Params.tags }}
+      {{ if ge (len .) 1 }}
+        {{ range . }}
+          <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">#{{ . }}</a>
+        {{ end }}
+      {{ end }}
+      {{ end}}
+    </aside>
+    <p class="post__summary">{{ .Description }}</p>
+  </span>
+</div>

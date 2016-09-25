@@ -4,7 +4,21 @@
   {{ partial "header-profile.html" . }}
 
   <div class="content reviews-single">
-    {{ .Content }}
+    <h2 class="post-list__title">Reviews</h2>
+    <p>Here are the projects that we've reviewed so far. If you'd like to add your project to the list, don't hesitate to <a href="{{ .Site.BaseURL }}contribute">contribute</a>.</p>
+    <a href="{{ .Site.BaseURL }}contribute" class="reviews-single__profile__button profile__button">
+      Contribute!
+    </a>
+    <ul class="review-list review-list--latest">
+      {{ range first 10 (where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "eq" "review") }}
+        <li>
+          <a href="{{ .Site.BaseURL }}review/{{ urlize .Title }}" class="review">
+            <img src="{{ .Site.BaseURL }}images/reviews/{{ .Params.image }}" alt="{{ .Title }}" class="review__image">
+            <div class="review__info">{{ .Title }}</div>
+          </a>
+        </li>
+     {{ end }}
+    </ul>
   </div>
 
 </div>

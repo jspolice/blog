@@ -477,6 +477,10 @@ footer {
   background-position: 0 -80px;
  }
 
+ .reviews-single__profile__button {
+  margin: 0;
+ }
+
  /**
   * Author
   */

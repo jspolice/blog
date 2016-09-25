@@ -6,6 +6,8 @@
   <div class="content review-single">
     <h1>{{ .Title }}</h1>
     {{ partial "author.html" .Params.author }}
+    <aside class="review-single__date"> on {{ .Date.Format "Jan 2" }}</aside>
+    {{ partial "tags.html" . }}
     <div class="review-single__image" style="background-image: url('/images/reviews/{{ .Params.imagebig }}')"></div>
     {{ .Content }}
   </div>

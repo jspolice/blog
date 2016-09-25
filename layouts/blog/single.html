@@ -3,8 +3,11 @@
 <div class="wrapper">
   {{ partial "header-profile.html" . }}
 
-  <div class="content">
-    {{ .Content }}
+  <div class="content blog-single">
+    <h2 class="post-list__title">Blog</h2>
+
+    {{ partial "post-list.html" . }}
+
   </div>
 
 </div>

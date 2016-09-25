@@ -14,6 +14,11 @@ categories = [
   "news",
 ]
 
+[author]
+image = "petar.png"
+name = "Petar Slovic"
+url = "/author/petarslovic"
+
 toc = false
 +++
 

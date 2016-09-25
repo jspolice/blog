@@ -5,6 +5,11 @@ description = "ReadRemaining.js"
 image = "readremaining-small.jpg"
 imageBig = "readremaining-medium.jpg"
 
+tags = [
+  "cool",
+  "jQuery",
+]
+
 [author]
 image = "petar.png"
 name = "Petar Slovic"

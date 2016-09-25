@@ -1,12 +1,8 @@
-<ul id="post-list">
-  {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
+<ul class="post-list">
+  {{ range where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "eq" "post" }}
     {{ $url := replace .Permalink .Site.BaseURL "" }}
-    {{ if ne $url "about/" }}
       <li>
-        <img src="{{ .Site.BaseURL }}images/{{ .Image }}" alt="">
-        <a href='{{ .Permalink }}'><aside class="dates">{{ .Date.Format "Jan 2" }}</aside></a>
-        <a href='{{ .Permalink }}'>{{ .Title }} <h2>{{ .Description | markdownify }}</h2></a>
+        {{ partial "post-small.html" . }}
       </li>
-    {{ end }}
   {{ end }}
 </ul>

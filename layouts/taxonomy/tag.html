@@ -1,0 +1,23 @@
+{{ template "partials/header.html" . }}
+
+<div class="wrapper">
+  {{ partial "header-profile.html" . }}
+
+  <div class="content reviews-single">
+    <h2 class="post-list__title">{{ .Title }}</h2>
+
+        <ul class="post-list">
+        {{ range .Data.Pages }}
+          <li>
+            {{ if eq .Section "post"}}
+              {{ partial "post-small.html" . }}
+            {{else}}
+              {{ partial "review.html" . }}
+            {{end}}
+          </li>
+        {{ end }}
+       </ul>
+  </div>
+
+</div>
+{{ template "partials/footer.html" . }}

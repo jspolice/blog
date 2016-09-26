@@ -1,4 +1,4 @@
-<h2 class="post-list__title">Latest Reviews</h2>
+<h2 class="review-list__title">Latest Reviews</h2>
 <ul class="review-list review-list--latest">
   {{ range first 10 (where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "eq" "review") }}
     <li>

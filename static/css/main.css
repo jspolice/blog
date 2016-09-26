@@ -349,6 +349,15 @@ footer {
   padding-left: 0;
 }
 
+.review-list li {
+  display: inline-block;
+}
+
+.review-list__title {
+  font-weight: 300;
+  font-size: 28px;
+}
+
 /** review */
 
 .review {
@@ -400,9 +409,21 @@ footer {
   background: rgba(0, 0, 0, 1);
 }
 
+/** Mixed list */
+
+.mixed-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mixed-list li {
+  display: inline-block;
+}
+
 /** Post List */
 .post-list {
-
+  list-style: none;
+  padding-left: 0;
 }
 
 .post {

@@ -10,8 +10,8 @@
     {{ .Content }}
 
     {{ $.Scratch.Add "name" .Params.name }}
-    <ul class="post-list">
-      {{ range where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "in" (slice "post" "review") }}
+    <ul class="mixed-list">
+      {{ range sort (where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "in" (slice "post" "review")) "Section" "desc" }}
         {{ if eq .Params.author.name ($.Scratch.Get "name") }}
           {{ $url := replace .Permalink .Site.BaseURL "" }}
           <li>

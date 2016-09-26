@@ -6,8 +6,8 @@
   <div class="content reviews-single">
     <h2 class="post-list__title">{{ .Title }}</h2>
 
-        <ul class="post-list">
-        {{ range .Data.Pages }}
+        <ul class="mixed-list">
+        {{ range sort .Data.Pages "Section" "desc" }}
           <li>
             {{ if eq .Section "post"}}
               {{ partial "post-small.html" . }}

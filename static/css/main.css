@@ -581,6 +581,25 @@ footer {
  }
 
  /**
+  * Author Box
+  */
+ 
+ .author-box {
+  display: flex;
+  margin-bottom: 40px;
+ }
+ 
+ .author-box__image {
+  margin-right: 20px;
+  padding-top: 10px;
+  text-align: center;
+ }
+
+ .author-box__url {
+  text-decoration: none;
+ }
+
+ /**
   * About
   */
 

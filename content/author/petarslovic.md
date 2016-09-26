@@ -2,13 +2,11 @@
 date = "2015-06-20T14:02:37+02:00"
 title = "petarslovic"
 hidden = true
+
 image = "petar.png"
 name = "Petar Slovic"
+authorUrl = "http://petar.io"
 +++
-
-### Petar Slovic
-
-[petar.io](http://petar.io)
 
 **Hungry for Code, Hungry for Ideas.** 
 

@@ -4,10 +4,15 @@
   {{ partial "header-profile.html" . }}
 
   <div class="content author-single">
-    <h2 class="post-list__title">Author</h2>
-    <img src="{{ .Site.BaseURL }}images/authors/{{ .Params.image }}" alt="">
-    
-    {{ .Content }}
+    <div class="author-box">
+      <div class="author-box__image">
+        <img src="{{ .Site.BaseURL }}images/authors/{{ .Params.image }}" alt="">
+        <a class="author-box__url" href="{{ .Params.authorUrl }}"><strong>{{ .Params.name }}</strong></a>
+      </div>
+      <div class="author-box__content">
+        {{ .Content }}
+      </div>
+    </div>
 
     {{ $.Scratch.Add "name" .Params.name }}
     <ul class="mixed-list">

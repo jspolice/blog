@@ -40,7 +40,7 @@ code {
 
 a {
   color: #666666;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -357,6 +357,7 @@ footer {
   display: inline-block;
   margin-bottom: 30px;
   min-width: auto;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -432,7 +433,11 @@ footer {
 .post__tags {
   display: inline-block;
   font-size: 16px;
-  font-weight: 400; 
+  font-weight: 400;
+}
+
+.post__tags > a {
+  text-decoration: none;
 }
 
 .post__image {
@@ -511,7 +516,8 @@ footer {
   margin: 0;
  }
 
-.review-single__date {
+.review-single__date,
+.post__date {
   font-size: 16px;
   color: #888888;
   font-weight: 400;

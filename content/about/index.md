@@ -6,7 +6,7 @@ hidden = true
 
 # About JSPolice
 
-JSPolice is a blog where we review Open Source JavaScript libraries and post the results.
+JSPolice is a blog where we review Open Source JavaScript libraries and post the results. For more details, check out this blog post: [Introduction](/post/introduction).
 
 - Learning good code patterns through review
 - Discovering architecture and code styles

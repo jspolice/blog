@@ -89,8 +89,8 @@ At the top, there are comments labeled by `1.`, `1.1`, `1.2`... and used in code
 
 We've sent a few pull requests, addressing some of the things we found are missing:
 
-- {{< emoji ":white_square_button:" >}} Add eslint, and style code according to it
-- {{< emoji ":white_medium_small_square:" >}} Add tests
+- {{< emoji ":white_square_button:" >}} Add tests
+- {{< emoji ":white_medium_small_square:" >}} Add eslint, and style code according to it
 - {{< emoji ":white_medium_small_square:" >}} Close a few issues
 
 This plguin is a great idea and a really good execution. Most of the important things from the checklist are there. A few things are missing though:

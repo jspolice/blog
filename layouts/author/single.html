@@ -1,0 +1,30 @@
+{{ template "partials/header.html" . }}
+
+<div class="wrapper">
+  {{ partial "header-profile.html" . }}
+
+  <div class="content author-single">
+    <h2 class="post-list__title">Author</h2>
+    <img src="{{ .Site.BaseURL }}images/authors/{{ .Params.image }}" alt="">
+    
+    {{ .Content }}
+
+    {{ $.Scratch.Add "name" .Params.name }}
+    <ul class="post-list">
+      {{ range where (where .Site.Pages "Params.hidden" "ne" "true") "Section" "in" (slice "post" "review") }}
+        {{ if eq .Params.author.name ($.Scratch.Get "name") }}
+          {{ $url := replace .Permalink .Site.BaseURL "" }}
+          <li>
+            {{ if eq .Section "post"}}
+              {{ partial "post-small.html" . }}
+            {{else}}
+              {{ partial "review.html" . }}
+            {{end}}
+          </li>
+        {{end}}
+      {{ end }}
+    </ul>
+  </div>
+
+</div>
+{{ template "partials/footer.html" . }}

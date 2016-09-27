@@ -5,10 +5,13 @@
   
   <div class="content post-single">
     <h1>{{ .Title }}</h1>
-    {{ partial "author.html" .Params.author }}
-    <aside class="review-single__date"> on {{ .Date.Format "Jan 2" }}</aside>
-    <aside class="review-single__date">{{ .ReadingTime }} min</aside>
-    {{ partial "tags.html" . }}
+
+    <div class="post-single__info">
+      {{ partial "author.html" .Params.author }}
+      <aside class="post-single__date"> on {{ .Date.Format "Jan 2" }}</aside>
+      {{ partial "tags.html" . }}
+      <aside class="post-single__date">{{ .ReadingTime }} min</aside>
+    </div>
     <div class="post-single__image" style="background-image: url('/images/posts/{{ with .Params.image }}{{ . }}{{ else }}default.png{{ end }}')"></div>
 
     {{ .Content }}

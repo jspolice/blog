@@ -98,20 +98,20 @@ a:hover {
 
 .profile__image {
   vertical-align: middle;
-  margin-right: 15px;
   width: 130px;
 }
 
 @media (min-width: 508px) {
   .profile__image {
     width: 75px;
+    margin-right: 15px;
   }
 }
 
 .profile__author {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 @media (min-width: 508px) {
@@ -123,9 +123,15 @@ a:hover {
 .profile__name {
   font-weight: 400;
   font-size: 24px;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #000000;
+}
+
+@media (min-width: 508px) {
+  .profile__name {
+    display: inline-block;
+  }
 }
 
 .profile__title {
@@ -133,7 +139,13 @@ a:hover {
   font-size: 18px;
   font-weight: 300;
   color: #6B6B6B;
-  display: inline-block;
+  display: block;
+}
+
+@media (min-width: 508px) {
+  .profile__title {
+    display: inline-block;
+  }
 }
 
 .profile__tagline {
@@ -272,12 +284,23 @@ footer {
 
 /** Content */
 .content {
+  margin-top: 10px;
   background: #FFFFFF;
-  margin-top: 45px;
   border-radius: 5px;
-  padding: 25px 45px;
+  padding: 25px;
   box-shadow: 0px 5px 22px -1px rgba(0,0,0,0.12);
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-top: 45px;
+    padding: 25px 45px;
+  }
+}
+
+.content a {
+  word-break: break-word;
 }
 
 .content figure img {
@@ -292,15 +315,27 @@ footer {
 }
 
 .content__header {
-  padding: 0 100px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .content__header {
+    padding: 0 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .content__title {
   font-weight: 300;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .content__title {
+    margin-top: 0.67em;
+  }
 }
 
 .content__description {
@@ -429,12 +464,18 @@ footer {
 .post {
   display: inline-block;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
   text-decoration: none;
   color: #000000;
   border: 1px solid #F5F5F5;
   margin-bottom: 30px;
   display: flex;
+}
+
+@media (min-width: 992px) {
+  .post {
+    padding: 30px;
+  }
 }
 
 .post__title {
@@ -449,6 +490,11 @@ footer {
 
 .post__date {
   display: inline-block;
+  font-size: 16px;
+  color: #888888;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .post__tags {
@@ -465,7 +511,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .post__image {
     display: block;
     max-width: 150px;
@@ -479,7 +525,7 @@ footer {
   flex: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .post__info {
     flex: 1;
     margin-left: 15px;
@@ -488,6 +534,7 @@ footer {
 
 .post__summary {
   margin-top: 10px;
+  margin-bottom: 0;
   display: block;
 }
 
@@ -496,12 +543,18 @@ footer {
  */
 
 .content.post-single {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 100px;
-  padding-top: 60px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
+}
+
+@media (min-width: 992px) {
+  .content.post-single {
+    font-size: 22px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-top: 60px;
+  }
 }
 
 .post-single__image {
@@ -517,20 +570,30 @@ footer {
  */
 
 .content.review-single {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-bottom: 100px;
-  padding-top: 60px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
 }
 
- .review-single__image {
+@media (min-width: 992px) {
+  .content.review-single {
+    font-size: 22px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-top: 60px;
+  }
+}
+
+.review-single__info {
+  margin-bottom: 20px;
+}
+
+.review-single__image {
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 0;
+  background-position: center top;
  }
 
  .reviews-single__profile__button {
@@ -538,7 +601,7 @@ footer {
  }
 
 .review-single__date,
-.post__date {
+.post-single__date {
   font-size: 16px;
   color: #888888;
   font-weight: 400;
@@ -546,37 +609,36 @@ footer {
   margin-right: 5px;
 }
 
- /**
-  * Author
-  */
+/**
+* Author
+*/
  
- .author {
+.author {
   text-decoration: none;
   color: #000000;
-  margin-bottom: 20px;
   display: inline-block;
  }
 
- .author:hover {
+.author:hover {
   color: #5694f1;
  }
 
- .author__inner {
+.author__inner {
   display: inline-block;
  }
 
- .author__image {
+.author__image {
   width: 32px;
   vertical-align: middle;
  }
 
- .author__name {
+.author__name {
   font-size: 18px;
   font-weight: 400;
   margin-left: 5px;
  }
 
- .post__info .author {
+.post__info .author {
   margin-bottom: 0;
  }
 
@@ -584,20 +646,36 @@ footer {
   * Author Box
   */
  
- .author-box {
-  display: flex;
+.author-box {
   margin-bottom: 40px;
- }
- 
- .author-box__image {
+}
+
+@media (min-width: 768px) {
+  .author-box {
+    display: flex;
+  }
+}
+
+.author-box__image {
   margin-right: 20px;
   padding-top: 10px;
   text-align: center;
- }
+}
 
- .author-box__url {
+.author-box__url {
   text-decoration: none;
- }
+  display: block;
+}
+
+.author-box__content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .author-box__content {
+    text-align: left;
+  }
+}
 
  /**
   * About

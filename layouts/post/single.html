@@ -10,7 +10,7 @@
       {{ partial "author.html" .Params.author }}
       <aside class="post-single__date"> on {{ .Date.Format "Jan 2" }}</aside>
       {{ partial "tags.html" . }}
-      <aside class="post-single__date">{{ .ReadingTime }} min</aside>
+      <aside class="post-single__date">{{ .ReadingTime }} min read</aside>
     </div>
     <div class="post-single__image" style="background-image: url('/images/posts/{{ with .Params.image }}{{ . }}{{ else }}default.png{{ end }}')"></div>
 

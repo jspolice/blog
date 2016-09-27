@@ -9,7 +9,7 @@
       {{ partial "author.html" .Params.author }}
       <aside class="review-single__date"> on {{ .Date.Format "Jan 2" }}</aside>
       {{ partial "tags.html" . }}
-      <aside class="review-single__date">{{ .ReadingTime }} min</aside>
+      <aside class="review-single__date">{{ .ReadingTime }} min read</aside>
     </div>
     <div class="review-single__image" style="background-image: url('/images/reviews/{{ .Params.imagebig }}')"></div>
     {{ .Content }}

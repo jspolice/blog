@@ -584,7 +584,8 @@ footer {
   }
 }
 
-.review-single__info {
+.review-single__info,
+.post-single__info {
   margin-bottom: 20px;
 }
 

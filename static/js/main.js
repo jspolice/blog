@@ -11,6 +11,7 @@ function highlightActiveNavItem() {
   }
 
   $items.removeClass('nav__link--active').filter(function(index, el) {
-    return activeSection.indexOf($(el).data('nav')) === 0;
+    var nav = $(el).data('nav');
+    return nav && activeSection.match(new RegExp(nav));
   }).addClass('nav__link--active');
 }

@@ -10,4 +10,4 @@ authorUrl = "http://petar.io"
 
 **Hungry for Code, Hungry for Ideas.** 
 
-Interested in building Web products and communities. Passionate about engineering Web applications and sharing knowledge. Architecturing complex and highly interactive JavaScript applications and brewing awesome coffee.
+Interested in building Web products and communities. Passionate about engineering Web applications and sharing knowledge. Architecting complex, dynamic and highly interactive web applications through JavaScript and lots of coffee. Specializing in Angular JS and enthusiasm.

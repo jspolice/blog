@@ -1,4 +1,4 @@
-baseurl = "http://jspolice.com/"
+baseurl = "https://jspolice.com/"
 languageCode = "en-us"
 title = "JSPolice"
 googleAnalytics = "UA-80126273-1"
